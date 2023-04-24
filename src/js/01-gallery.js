@@ -15,6 +15,8 @@ const addImagesToGallery = galleryItems.reduce((acc, newImage) => {
 galleryList.insertAdjacentHTML("beforeend", addImagesToGallery);
 
 galleryList.addEventListener("click", (event) => {
+  event.preventDefault();
+
   const bigImg = event.target.dataset.source;
   console.log(bigImg);
 

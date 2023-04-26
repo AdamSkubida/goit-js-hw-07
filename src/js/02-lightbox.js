@@ -17,5 +17,5 @@ galleryList.insertAdjacentHTML("beforeend", template);
 new SimpleLightbox(".gallery a", {
   captions: true,
   captionsData: "alt",
-  captionsDelay: 250,
+  captionDelay: 250,
 });
